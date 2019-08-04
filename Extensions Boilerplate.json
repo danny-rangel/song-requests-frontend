@@ -14,6 +14,42 @@
       "isEphemeral": false,
       "isOrigin": false,
       "value": "wss://localhost:8080/sockjs-node/877/vwyvxl2l/websocket"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "wss://localhost:8080/sockjs-node/350/t03ddfaj/websocket"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "https://localhost:8080/config.html?anchor=panel&language=en&locale=en-US&mode=config&state=testing&platform=web"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "wss://localhost:8080/sockjs-node/357/yh4cjpto/websocket"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "wss://localhost:8080/sockjs-node/121/r3e2siik/websocket"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "wss://localhost:8080/sockjs-node/384/zy3zghb3/websocket"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "wss://localhost:8080"
     }
   ],
   "extensionViews": [
@@ -32,6 +68,31 @@
       "linked": false,
       "linkedUserId": "",
       "mode": "viewer",
+      "isPopout": false,
+      "role": "Broadcaster",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "2",
+      "label": "",
+      "channelId": "431982624",
+      "configurationAnchor": "panel",
+      "displayChannelName": "sad__boi_",
+      "type": "config",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": true,
+      "linkedUserId": "265737932",
+      "mode": "config",
       "isPopout": false,
       "role": "Broadcaster",
       "x": 0,

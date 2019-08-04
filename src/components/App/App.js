@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Authentication from '../../util/Authentication/Authentication';
 import './App.css';
+
 const authentication = new Authentication();
+//if the extension is running on twitch or dev rig, set the shorthand here. otherwise, set to null.
+const twitch = window.Twitch ? window.Twitch.ext : null;
 
 const App = () => {
     const [finishedLoading, setFinishedLoading] = useState(false);
@@ -9,17 +12,13 @@ const App = () => {
     const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
-        //if the extension is running on twitch or dev rig, set the shorthand here. otherwise, set to null.
-        const twitch = window.Twitch ? window.Twitch.ext : null;
-
         if (twitch) {
             twitch.onAuthorized(auth => {
                 authentication.setToken(auth.token, auth.userId);
                 if (!finishedLoading) {
                     // if the component hasn't finished loading (as in we've not set up after getting a token), let's set it up now.
-                    // console.log(authentication.state.token);
+
                     // now we've done the setup for the component, let's set the state to true to force a rerender with the correct data.
-                    // console.log(authentication.state.token);
                     setFinishedLoading(true);
                 }
             });
