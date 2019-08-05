@@ -50,6 +50,30 @@
       "isEphemeral": false,
       "isOrigin": true,
       "value": "wss://localhost:8080"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "https://localhost:8080/video_component.html?anchor=component&language=en&locale=en-US&mode=viewer&state=testing&platform=web"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "https://localhost:8080/video_overlay.html?anchor=video_overlay&language=en&locale=en-US&mode=viewer&state=testing&platform=web&legacyComponentDesign=true"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "https://localhost:8080/config.html?anchor=video_overlay&language=en&locale=en-US&mode=config&state=testing&platform=web&legacyComponentDesign=true"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "https://localhost:8080/config.html?anchor=component&language=en&locale=en-US&mode=config&state=testing&platform=web&legacyComponentDesign=true"
     }
   ],
   "extensionViews": [
@@ -95,6 +119,31 @@
       "mode": "config",
       "isPopout": false,
       "role": "Broadcaster",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "3",
+      "label": "",
+      "channelId": "431982624",
+      "configurationAnchor": "panel",
+      "displayChannelName": "sad__boi_",
+      "type": "video_overlay",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": false,
+      "linkedUserId": "",
+      "mode": "viewer",
+      "isPopout": false,
+      "role": "Logged-Out Viewer",
       "x": 0,
       "y": 0,
       "orientation": "Portrait",
