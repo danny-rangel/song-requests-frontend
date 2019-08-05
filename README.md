@@ -1,6 +1,6 @@
 # Native React Boilerplate
 
-# Modified Fork
+## Modified Fork
 
 This contains React code that is using hooks instead of class components.
 
