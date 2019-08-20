@@ -1,0 +1,76 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "",
+  "backendFolderName": "",
+  "certificateExceptions": [
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "https://localhost:8080"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "wss://localhost:8080"
+    }
+  ],
+  "extensionViews": [],
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "sad__boi_",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "http://localhost:8080/config.html",
+    "configurationLocation": "none",
+    "description": "Song Requests allows you to create, edit and delete songs from your own personal song list that will get displayed to your viewers on your channel. Viewers can then view your song list and request a song that will get added to your queue! You can then remove songs from your queue as you perform them or clear the queue altogether. By default, a viewer can only request one song at a time, but you can change that to allow multiple songs from one viewer. You are also able to close the queue at any point if your list is getting too long! Support for bits enabled requests and sub only mode coming soon!",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "",
+    "iconUrls": {},
+    "id": "xur4smrn3hxffj87io4a4whhdr6wto",
+    "installationCount": -42,
+    "liveConfigUrl": "http://localhost:8080/live_config.html",
+    "name": "Song Requests",
+    "panelHeight": 500,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": true,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "Allow your viewers to request songs for you to perform from a song list that you create!",
+    "supportEmail": "hello@danielrangel.io",
+    "vendorCode": "",
+    "version": "0.0.5",
+    "viewerSummary": "Request a song from the streamer's song list by pressing request!",
+    "viewerUrl": "http://localhost:8080/panel.html",
+    "viewerUrls": {
+      "panel": "http://localhost:8080/panel.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "http://localhost:8080/panel.html",
+        "height": 500,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "http://localhost:8080/config.html",
+        "canLinkExternalContent": false
+      },
+      "liveConfig": {
+        "viewerUrl": "http://localhost:8080/live_config.html",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "frontendCommand": "npm run start",
+  "frontendFolderName": "/Users/danielrangel/Desktop/stream-requests-frontend",
+  "name": "Stream Song Requests",
+  "version": 1
+}

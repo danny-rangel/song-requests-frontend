@@ -1,71 +1,111 @@
-import React, { useState, useEffect } from 'react';
-import Authentication from '../../util/Authentication/Authentication';
-import './LiveConfigPage.css';
+import React from 'react';
+import LiveConfigSongs from './Pages/LiveConfigSongs';
+import LiveConfigNav from './LiveConfigNav';
+import LiveConfigQueue from './Pages/LiveConfigQueue';
+import { useQuery } from '@apollo/react-hooks';
+import gql from 'graphql-tag';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import styled from 'styled-components';
+import LiveConfigAdd from './Pages/LiveConfigAdd';
+import LiveConfigSettings from './Pages/LiveConfigSettings';
 
-const authentication = new Authentication();
-//if the extension is running on twitch or dev rig, set the shorthand here. otherwise, set to null.
-const twitch = window.Twitch ? window.Twitch.ext : null;
+import Loading from '../styled/Loading';
 
-const LiveConfigPage = () => {
-    const [finishedLoading, setFinishedLoading] = useState(false);
-    const [theme, setTheme] = useState('light');
-
-    function contextUpdate(context, delta) {
-        if (delta.includes('theme')) {
-            setTheme(context.theme);
+export const ME_QUERY = gql`
+    query {
+        me {
+            token
+            broadcaster {
+                id
+                isMod
+                username
+                profileImage
+                queueIsClosed
+                subMode
+                bitsOnly
+                bitPriority
+                songCount
+                oneRequestPerUser
+            }
+            user {
+                id
+                isMod
+                hasSharedId
+                role
+                userId
+            }
+            channelId
         }
     }
+`;
 
-    useEffect(() => {
-        if (twitch) {
-            twitch.onAuthorized(auth => {
-                authentication.setToken(auth.token, auth.userId);
-                if (!finishedLoading) {
-                    // if the component hasn't finished loading (as in we've not set up after getting a token), let's set it up now.
+const StyledDiv = styled.div`
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    background-color: ${props =>
+        props.theme === 'light' ? '#ffffff' : '#000000'};
+`;
 
-                    // now we've done the setup for the component, let's set the state to true to force a rerender with the correct data.
-                    setFinishedLoading(true);
-                }
-            });
+const LiveConfigPage = ({ theme, twitch }) => {
+    const { loading, error, data } = useQuery(ME_QUERY);
 
-            twitch.listen('broadcast', (target, contentType, body) => {
-                twitch.rig.log(
-                    `New PubSub message!\n${target}\n${contentType}\n${body}`
-                );
-                // now that you've got a listener, do something with the result...
-
-                // do something...
-            });
-
-            twitch.onContext((context, delta) => {
-                contextUpdate(context, delta);
-            });
-        }
-
-        if (twitch) {
-            return twitch.unlisten('broadcast', () =>
-                console.log('successfully unlistened')
-            );
-        }
-    }, []);
-
-    if (finishedLoading) {
+    if (!loading) {
         return (
-            <div className="LiveConfigPage">
-                <div
-                    className={
-                        theme === 'light'
-                            ? 'LiveConfigPage-light'
-                            : 'LiveConfigPage-dark'
-                    }
-                >
-                    <p>Hello world!</p>
-                    <p>This is the live config page! </p>
-                </div>
-            </div>
+            <Router>
+                <Redirect to="/live_config.html" />
+                <StyledDiv theme={theme}>
+                    <LiveConfigNav location={location} theme={theme} />
+                    <Route
+                        path="/live_config.html"
+                        exact
+                        render={props => (
+                            <LiveConfigSongs
+                                location={location}
+                                theme={theme}
+                                twitch={twitch}
+                                {...props}
+                            />
+                        )}
+                    />
+                    <Route
+                        path="/live_config.html/queue"
+                        exact
+                        render={props => (
+                            <LiveConfigQueue
+                                theme={theme}
+                                twitch={twitch}
+                                {...props}
+                            />
+                        )}
+                    />
+                    <Route
+                        path="/live_config.html/add"
+                        exact
+                        component={props => (
+                            <LiveConfigAdd theme={theme} {...props} />
+                        )}
+                    />
+                    <Route
+                        path="/live_config.html/settings"
+                        exact
+                        component={props => (
+                            <LiveConfigSettings
+                                theme={theme}
+                                user={data}
+                                {...props}
+                            />
+                        )}
+                    />
+                </StyledDiv>
+            </Router>
         );
     } else {
-        return <div className="LiveConfigPage" />;
+        return <Loading height="40px" width="40px" />;
     }
 };
 

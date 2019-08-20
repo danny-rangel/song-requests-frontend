@@ -1,8 +1,5 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import App from "./components/App/App"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Panel from './Panel';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById("root")
-)
+ReactDOM.render(<Panel />, document.getElementById('root'));

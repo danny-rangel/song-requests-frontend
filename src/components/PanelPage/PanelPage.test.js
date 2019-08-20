@@ -1,9 +1,9 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import App from './App';
+import PanelPage from './PanelPage';
 
 test('renders without failing', () => {
-    let wrapper = shallow(<App />);
+    let wrapper = shallow(<PanelPage />);
 
     expect(wrapper).toBeDefined();
 });

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald|Raleway&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.App {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+header,
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App-light {
+    background-color: #ffffff;
+    color: #232127;
+}
+
+.App-dark {
+    background-color: #000000;
+    color: #ffffff;
+}
