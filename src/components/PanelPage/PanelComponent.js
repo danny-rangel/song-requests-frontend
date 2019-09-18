@@ -190,6 +190,8 @@ const PanelComponent = ({ user, theme, twitch }) => {
                 handleSkip={handleSkip}
                 handleSort={handleSort}
                 theme={theme}
+                songCount={songCount}
+                skip={skip}
             />
             <SnackBarComponent
                 openSuccess={openSuccess}

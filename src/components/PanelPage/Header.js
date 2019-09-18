@@ -33,7 +33,7 @@ const StyledDiv = styled.div`
 `;
 
 const StyledTitleText = styled.h1`
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
 `;
 

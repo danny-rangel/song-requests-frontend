@@ -157,6 +157,8 @@ const LiveConfigQueue = ({ theme, twitch }) => {
                 theme={theme}
                 disabled={clearQueueLoading}
                 handleClearQueue={handleClearQueue}
+                queueSongCount={queueSongCount}
+                skip={skip}
             />
             <SnackBarComponent
                 openSuccess={openSuccess}

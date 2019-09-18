@@ -193,7 +193,7 @@ const ConfigPage = ({ theme }) => {
                 </StyledInfoText>
                 <StyledInfoText>
                     You also can change everything you see here in your creator
-                    dashboard as well.
+                    dashboard later on.
                 </StyledInfoText>
                 <StyledInfoText>
                     Once you save your changes, head on over to your creator

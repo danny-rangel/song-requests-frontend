@@ -39,7 +39,7 @@ const StyledIconButton = styled(IconButton)`
     }
 `;
 
-const Navigation = ({ handleSkip, handleSort, theme }) => {
+const Navigation = ({ handleSkip, handleSort, theme, songCount, skip }) => {
     return (
         <StyledNav theme={theme}>
             <StyledIconButton
@@ -47,6 +47,7 @@ const Navigation = ({ handleSkip, handleSort, theme }) => {
                 color="inherit"
                 theme={theme}
                 onClick={() => handleSkip('prev')}
+                disabled={skip - 5 < 0}
             >
                 <ChevronLeft />
             </StyledIconButton>
@@ -73,6 +74,7 @@ const Navigation = ({ handleSkip, handleSort, theme }) => {
                 color="inherit"
                 theme={theme}
                 onClick={() => handleSkip('next')}
+                disabled={skip + 5 >= songCount}
             >
                 <ChevronRight />
             </StyledIconButton>

@@ -20,16 +20,20 @@
   "manifest": {
     "anchor": "panel",
     "assetUrls": [],
-    "authorName": "sad__boi_",
+    "authorName": "sadboi",
     "bitsEnabled": false,
     "canInstall": true,
     "configUrl": "http://localhost:8080/config.html",
     "configurationLocation": "none",
-    "description": "Song Requests allows you to create, edit and delete songs from your own personal song list that will get displayed to your viewers on your channel. Viewers can then view your song list and request a song that will get added to your queue! You can then remove songs from your queue as you perform them or clear the queue altogether. By default, a viewer can only request one song at a time, but you can change that to allow multiple songs from one viewer. You are also able to close the queue at any point if your list is getting too long! Support for bits enabled requests and sub only mode coming soon!",
+    "description": "Song Requests allows you to create, edit and delete songs from your own personal song list that will get displayed to your viewers on your channel. Viewers can then view your song list and request a song that will get added to your queue! You can then remove songs from your queue as you perform them or clear the queue altogether. By default, a viewer can only request one song at a time, but you can change that to allow multiple songs from one viewer. You are also able to close the queue at any point if your list is getting too long!",
     "eulaTosUrl": "",
     "hasChatSupport": false,
-    "iconUrl": "",
-    "iconUrls": {},
+    "iconUrl": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/logoe85a3dd3-7999-478f-a21c-9f8843a5f7bf",
+    "iconUrls": {
+      "100x100": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/logoe85a3dd3-7999-478f-a21c-9f8843a5f7bf",
+      "24x24": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/taskbar1d6909cb-11b4-4ed1-b1ac-dd5fa6deda6a",
+      "300x200": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/discovery70bcc197-b1de-43a9-abdf-a750fe6c0b1c"
+    },
     "id": "xur4smrn3hxffj87io4a4whhdr6wto",
     "installationCount": -42,
     "liveConfigUrl": "http://localhost:8080/live_config.html",
@@ -38,20 +42,26 @@
     "privacyPolicyUrl": "",
     "requestIdentityLink": true,
     "requiredBroadcasterAbilities": [],
-    "screenshotUrls": [],
+    "screenshotUrls": [
+      "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/screenshot0c4c4763-87d7-4a9e-88d0-b5402e6c45a8"
+    ],
     "sku": "",
     "state": "Testing",
     "subscriptionsSupportLevel": "none",
-    "summary": "Allow your viewers to request songs for you to perform from a song list that you create!",
-    "supportEmail": "hello@danielrangel.io",
+    "summary": "A simple extension created for Twitch Musicians that allows customization of your own personal song list and live requests from viewers!",
+    "supportEmail": "sadboimusica@gmail.com",
     "vendorCode": "",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "viewerSummary": "Request a song from the streamer's song list by pressing request!",
     "viewerUrl": "http://localhost:8080/panel.html",
     "viewerUrls": {
+      "mobile": "http://localhost:8080/mobile.html",
       "panel": "http://localhost:8080/panel.html"
     },
     "views": {
+      "mobile": {
+        "viewerUrl": "http://localhost:8080/mobile.html"
+      },
       "panel": {
         "viewerUrl": "http://localhost:8080/panel.html",
         "height": 500,

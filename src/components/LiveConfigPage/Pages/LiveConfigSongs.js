@@ -160,6 +160,8 @@ const LiveConfigSongs = ({ theme, twitch, location }) => {
                 handleSkip={handleSkip}
                 handleSort={handleSort}
                 theme={theme}
+                songCount={songCount}
+                skip={skip}
             />
             <SnackBarComponent
                 openSuccess={openSuccess}

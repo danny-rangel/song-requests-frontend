@@ -43,7 +43,9 @@ const LiveConfigToolBar = ({
     handleSkip,
     handleClearQueue,
     theme,
-    disabled
+    disabled,
+    queueSongCount,
+    skip
 }) => {
     return (
         <StyledNav theme={theme}>
@@ -52,6 +54,7 @@ const LiveConfigToolBar = ({
                 color="inherit"
                 theme={theme}
                 onClick={() => handleSkip('prev')}
+                disabled={skip - 6 < 0}
             >
                 <ChevronLeft />
             </StyledIconButton>
@@ -70,6 +73,7 @@ const LiveConfigToolBar = ({
                 color="inherit"
                 theme={theme}
                 onClick={() => handleSkip('next')}
+                disabled={skip + 6 >= queueSongCount}
             >
                 <ChevronRight />
             </StyledIconButton>
