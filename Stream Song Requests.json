@@ -16,23 +16,99 @@
       "value": "wss://localhost:8080"
     }
   ],
-  "extensionViews": [],
+  "extensionViews": [
+    {
+      "id": "1",
+      "label": "",
+      "channelId": "431982624",
+      "configurationAnchor": "panel",
+      "displayChannelName": "sad__boi_",
+      "type": "panel",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": false,
+      "linkedUserId": "",
+      "mode": "viewer",
+      "isPopout": false,
+      "role": "Broadcaster",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "2",
+      "label": "",
+      "channelId": "431982624",
+      "configurationAnchor": "panel",
+      "displayChannelName": "sad__boi_",
+      "type": "config",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": true,
+      "linkedUserId": "265737932",
+      "mode": "config",
+      "isPopout": false,
+      "role": "Broadcaster",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "3",
+      "label": "",
+      "channelId": "431982624",
+      "configurationAnchor": "panel",
+      "displayChannelName": "sad__boi_",
+      "type": "dashboard",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": true,
+      "linkedUserId": "265737932",
+      "mode": "dashboard",
+      "isPopout": false,
+      "role": "Broadcaster",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ],
   "manifest": {
     "anchor": "panel",
     "assetUrls": [],
-    "authorName": "sadboi",
+    "authorName": "sad__boi_",
     "bitsEnabled": false,
     "canInstall": true,
     "configUrl": "http://localhost:8080/config.html",
     "configurationLocation": "none",
-    "description": "Song Requests allows you to create, edit and delete songs from your own personal song list that will get displayed to your viewers on your channel. Viewers can then view your song list and request a song that will get added to your queue! You can then remove songs from your queue as you perform them or clear the queue altogether. By default, a viewer can only request one song at a time, but you can change that to allow multiple songs from one viewer. You are also able to close the queue at any point if your list is getting too long!",
+    "description": "Song Requests allows you to create, edit and delete songs from your own personal song list that will get displayed to your viewers on your channel. Viewers can then view your song list and request a song that will get added to your queue. You can then remove songs from your queue as you perform them or clear the queue altogether. By default, a viewer can only request one song at a time, but you can change that to allow multiple songs from one viewer. You are also able to close the queue at any point if your list is getting too long!\n\nNOTE: This extension does not connect to Spotify, Apple Music, Youtube, etc. and is instead designed for Twitch Musicians that perform covers of music.",
     "eulaTosUrl": "",
     "hasChatSupport": false,
-    "iconUrl": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/logoe85a3dd3-7999-478f-a21c-9f8843a5f7bf",
+    "iconUrl": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.6/logo00d55255-c886-4d68-be1c-7c040effcde9",
     "iconUrls": {
-      "100x100": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/logoe85a3dd3-7999-478f-a21c-9f8843a5f7bf",
-      "24x24": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/taskbar1d6909cb-11b4-4ed1-b1ac-dd5fa6deda6a",
-      "300x200": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/discovery70bcc197-b1de-43a9-abdf-a750fe6c0b1c"
+      "100x100": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.6/logo00d55255-c886-4d68-be1c-7c040effcde9",
+      "24x24": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.6/taskbara78c39f0-bf6f-49b0-9f83-5c4f6693a101",
+      "300x200": "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.6/discovery0cf15bff-1816-4a65-9c2d-6e7b024901dc"
     },
     "id": "xur4smrn3hxffj87io4a4whhdr6wto",
     "installationCount": -42,
@@ -43,25 +119,24 @@
     "requestIdentityLink": true,
     "requiredBroadcasterAbilities": [],
     "screenshotUrls": [
-      "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.5/screenshot0c4c4763-87d7-4a9e-88d0-b5402e6c45a8"
+      "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.6/screenshotf29435a0-50cd-404c-84aa-119651049710",
+      "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.6/screenshot5073af17-c6d0-4bc3-a356-811a113b463b",
+      "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.6/screenshotaded4dea-e53e-4835-b0db-c5ddcc481bb6",
+      "https://extensions-discovery-images.twitch.tv/xur4smrn3hxffj87io4a4whhdr6wto/0.0.6/screenshot1732a9fb-ef95-46a2-b493-55f861a5e36c"
     ],
     "sku": "",
     "state": "Testing",
     "subscriptionsSupportLevel": "none",
-    "summary": "A simple extension created for Twitch Musicians that allows customization of your own personal song list and live requests from viewers!",
+    "summary": "Song Requests was designed for Twitch Musicians that needed a way to customize their own personal song list and take live viewer requests.",
     "supportEmail": "sadboimusica@gmail.com",
     "vendorCode": "",
     "version": "0.0.6",
     "viewerSummary": "Request a song from the streamer's song list by pressing request!",
     "viewerUrl": "http://localhost:8080/panel.html",
     "viewerUrls": {
-      "mobile": "http://localhost:8080/mobile.html",
       "panel": "http://localhost:8080/panel.html"
     },
     "views": {
-      "mobile": {
-        "viewerUrl": "http://localhost:8080/mobile.html"
-      },
       "panel": {
         "viewerUrl": "http://localhost:8080/panel.html",
         "height": 500,

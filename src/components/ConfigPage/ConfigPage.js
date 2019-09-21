@@ -37,9 +37,9 @@ const StyledListContainer = styled(Paper)`
     }
 `;
 
-const StyledHeader = styled.div`
-    padding: 30px 0 0 20px;
-`;
+// const StyledHeader = styled.div`
+//     padding: 30px;
+// `;
 
 const StyledInfoTextDiv = styled.div`
     padding: 30px;
@@ -184,9 +184,9 @@ const ConfigPage = ({ theme }) => {
 
     return (
         <StyledListContainer theme={theme}>
-            <StyledHeader>
+            {/* <StyledHeader>
                 <img className="logo" />
-            </StyledHeader>
+            </StyledHeader> */}
             <StyledInfoTextDiv>
                 <StyledInfoText>
                     Just some quick configuration to get you up and running!
