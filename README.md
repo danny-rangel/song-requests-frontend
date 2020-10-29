@@ -2,4 +2,6 @@ This is the frontend for a Twitch extension I created called Song Requests. The 
 
 Front end was created using React. Data was queried and managed with Apollo Client, using the new React hooks that they just came out with. Styled with Material UI React and Styled Components.
 
-![Song Requests UI](https://i.imgur.com/CfoEPsh.png)
+![Song Requests UI](https://i.imgur.com/CfoEPsh.png)   
+
+![Twitch View](https://i.imgur.com/EyORtsz.png)
